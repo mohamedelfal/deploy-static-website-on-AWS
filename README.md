@@ -1,49 +1,69 @@
 # Udacity DevOps
-## 1- Website Files
-### The S3 bucket is created.
+# Project 1 :Deploy Static Website on AWS
+## Table Of Contents
+* [Project 1 :Deploy Static Website on AWS](#project-1-deploy-static-website-on-aws)
+  * [1- Website Files](#1--website-files)
+    * [1-The S3 bucket is created.](#1-the-s3-bucket-is-created)
+    * [2-all the website Files uploaded to the newly created S3 bucket.](#2-all-the-website-files-uploaded-to-the-newly-created-s3-bucket)
+    * [3- The S3 bucket is conFigured to support static website hosting.](#3--the-s3-bucket-is-configured-to-support-static-website-hosting)
+    * [4- The S3 bucket has an IAM bucket policy that makes the bucket contents publicly accessible.](#4--the-s3-bucket-has-an-iam-bucket-policy-that-makes-the-bucket-contents-publicly-accessible)
+  * [2- Website Distribution](#2--website-distribution)
+    * [CloudFront has been conFigured to retrieve and distribute website Files.](#cloudfront-has-been-configured-to-retrieve-and-distribute-website-files)
+  * [3- Access Website in Web Browser](#3--access-website-in-web-browser)
+    * [1-Access the`https` secured website **without appending** `/index.html` at the end: `https://d25g3zasxgsb3t.cloudfront.net`](#1--open-a-web-browser-like-google-chrome-and-paste-the-copied-cloudfront-domain-name-httpsd25g3zasxgsb3tcloudfrontnet-without-appending-indexhtml-at-the-end)
+    * [2- Access the website via website-endpoint:`http://first-udacity-website.s3-website.eu-west-3.amazonaws.com/`](#2--access-the-website-via-website-endpoint-httpfirst-udacity-websites3-websiteeu-west-3amazonawscom)
+    * [3- Access the bucket object via its S3 object URL:`https://first-udacity-website.s3.amazonaws.com/index.html`](#2--access-the-website-via-website-endpoint-httpfirst-udacity-websites3-websiteeu-west-3amazonawscom)
+    
+## Project 1 :Deploy Static Website on AWS
+ In this project,will deploy a static website to AWS.
 
-![1-S3 bucket is created](./image/1-S3BucketIsCreated.jpg)
+ ## 1- Website Files
+ ### 1-The S3 bucket is created.
 
-### 2-all the website Files uploaded to the newly created S3 bucket.
-![2-Website Files Uploaded](./image/2-WebsiteFilesUploaded.jpg)
+ ![1-S3 bucket is created](./image/1-S3BucketIsCreated.jpg)
 
-### 3- The S3 bucket is conFigured to support static website hosting.
+ ### 2-all the website Files uploaded to the newly created S3 bucket.
+ ![2-Website Files Uploaded](./image/2-WebsiteFilesUploaded.jpg)
 
-![3-support static website hosting](./image/3-SupportStaticWebsiteHosting.jpg)
+ ### 3- The S3 bucket is conFigured to support static website hosting.
+
+ ![3-support static website hosting](./image/3-SupportStaticWebsiteHosting.jpg)
 
 ### 4- The S3 bucket has an IAM bucket policy that makes the bucket contents publicly accessible.
 
-![4-Bucket Policy](./image/4-BucketPolicy.jpg)
+ ![4-Bucket Policy](./image/4-BucketPolicy.jpg)
 
 
 ## 2- Website Distribution
 
-### CloudFront has been conFigured to retrieve and distribute website Files.
+ ### CloudFront has been conFigured to retrieve and distribute website Files.
 
-![5-CloudFront Distribution](./image/5-CloudFrontDistribution.jpg)
+ ![5-CloudFront Distribution](./image/5-CloudFrontDistribution.jpg)
 
 ## 3- Access Website in Web Browser
 
-### 1- Open a web browser like Google Chrome, and paste the copied CloudFront domain name (such as, d25g3zasxgsb3t.cloudfront.net) without appending /index.html at the end. The CloudFront domain 
-
-name should show you the content of the default home-page, as shown below:
->> https://d25g3zasxgsb3t.cloudfront.net/
+ ### 1- Open a web browser like Google Chrome, and paste the copied CloudFront domain name (`https://d25g3zasxgsb3t.cloudfront.net`) **without appending** `/index.html` at the end. <br>
+The CloudFront domain name  `https://d25g3zasxgsb3t.cloudfront.net/` show the content of the default home-page, as shown below:
 
 ![https](./image/https.jpg)
 
-The figure above shows the page displayed at >> https://d25g3zasxgsb3t.cloudfront.net/
+The figure above shows the page displayed at: 
 
-### 2- Access the website via website-endpoint, such as http://first-udacity-website.s3-website.eu-west-3.amazonaws.com/
+> https://d25g3zasxgsb3t.cloudfront.net/
 
->>http://first-udacity-website.s3-website.eu-west-3.amazonaws.com/
+### 2- Access the website via website-endpoint:`http://first-udacity-website.s3-website.eu-west-3.amazonaws.com/`
 
 ![https](./image/http.jpg)
 
-The figure above shows the page displayed at >> http://first-udacity-website.s3-website.eu-west-3.amazonaws.com/
+The figure above shows the page displayed at:
 
-### 3- Access the bucket object via its S3 object URL, such as, https://first-udacity-website.s3.amazonaws.com/index.html
+> http://first-udacity-website.s3-website.eu-west-3.amazonaws.com/
+
+### 3- Access the bucket object via its S3 object URL: `https://first-udacity-website.s3.amazonaws.com/index.html`
 
 ![index](./image/index.jpg)
 
-The figure above shows the page displayed at >> https://first-udacity-website.s3.amazonaws.com/index.html
+The figure above shows the page displayed at:
+
+> https://first-udacity-website.s3.amazonaws.com/index.html
 
