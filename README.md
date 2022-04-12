@@ -10,6 +10,7 @@
     
   * [2- Website Distribution](#2--website-distribution-)
     * [CloudFront has been conFigured to retrieve and distribute website Files.](#cloudfront-has-been-configured-to-retrieve-and-distribute-website-files-)
+  * [3- Access Website In Web Browser](#3--access-website-in-web-browser-)
     * [1-Access the`https` secured website **without appending** `/index.html` at the end: `https://d25g3zasxgsb3t.cloudfront.net`](#1--open-a-web-browser-like-google-chrome-and-paste-the-copied-cloudfront-domain-name-httpsd25g3zasxgsb3tcloudfrontnet-without-appending-indexhtml-at-the-end--)
     * [2- Access the website via website-endpoint:`http://first-udacity-website.s3-website.eu-west-3.amazonaws.com/`](#2--access-the-website-via-website-endpointhttpfirst-udacity-websites3-websiteeu-west-3amazonawscom-)
     * [3- Access the bucket object via its S3 object URL:`https://first-udacity-website.s3.amazonaws.com/index.html`](#3--access-the-bucket-object-via-its-s3-object-url-httpsfirst-udacity-websites3amazonawscomindexhtml-)
