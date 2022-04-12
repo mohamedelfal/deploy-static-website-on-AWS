@@ -100,3 +100,4 @@ The figure above shows the page displayed at:
 <br>
 
 ***[GitHub Link](https://github.com/mohamedelfal/UdacityDevOps/)***
+# [WebSite](https://mohamedelfal.github.io/UdacityAdvancedCloudDevOps/Project-1-DeployStaticWebsiteOnAWS/udacity-starter-website/)
